@@ -1,0 +1,10 @@
+<div>
+    <ul *ngFor="let member of members">
+        <li>{{member.id}}</li>
+        <li>{{member.firstName}}</li>
+        <li>{{member.lastName}}</li>
+        <li>{{member.email}}</li>
+        <button (click)="deleteOneMember(member.id)">Delete</button>
+        <button [routerLink]="['/memberlist',member.id]">Details</button>
+    </ul>
+</div>>

@@ -1,0 +1,52 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Smith",
+      "phone": "0123456789",
+      "email": "john@test.com",
+      "address": {
+        "street": "11 John st",
+        "state": "NSW",
+        "postCode": 2000
+      }
+    },
+    {
+      "id": 2,
+      "firstName": "Mary",
+      "lastName": "Brown",
+      "phone": "0565787789",
+      "email": "mary@test.com",
+      "address": {
+        "street": "55 Mary st",
+        "state": "QLD",
+        "postCode": 3510
+      }
+    },
+    {
+      "id": 3,
+      "firstName": "Peter",
+      "lastName": "Holland",
+      "phone": "4565601275",
+      "email": "peter@test.com",
+      "address": {
+        "street": "31 Peter st",
+        "state": "MEL",
+        "postCode": 3210
+      }
+    },
+    {
+      "firstName": "testing",
+      "lastName": "Test",
+      "phone": "0233456789",
+      "email": "testing@testing.com",
+      "address": {
+        "street": "30 iphone st",
+        "state": "NSW",
+        "postCode": 2000
+      },
+      "id": 4
+    }
+  ]
+}
