@@ -1,6 +1,54 @@
-<div>
-  <a routerLink="/memberlist"> Member List</a>
-  <a routerLink="/create">Create</a>
-</div>
-<h1>Welcome to home page</h1>
-<router-outlet></router-outlet>
+<mat-card>
+  <mat-drawer-container class="">
+    <mat-drawer #drawer [mode]="'side'" class="sidenavcontainer" opened>
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item><a routerLink="/memberlist"> Member List</a></button>
+            <button mat-menu-item><a routerLink="/create">Create</a></button>
+          </mat-menu>
+          
+          <mat-list>
+            <mat-list-item><a routerLink="/create">Create</a></mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><a routerLink="/memberlist"> Member List</a></mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>Item 3</mat-list-item>
+          </mat-list>
+          <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true"
+                                (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Expand Menu
+                  </mat-panel-title>
+                  <mat-panel-description></mat-panel-description>
+                </mat-expansion-panel-header>
+                
+                <mat-list>
+                  <mat-list-item><a routerLink="/create">Create</a></mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item><a routerLink="/memberlist"> Member List</a></mat-list-item>
+                  <mat-divider></mat-divider>
+                  <mat-list-item>Item 3</mat-list-item>
+                </mat-list>
+            </mat-expansion-panel>
+          </mat-accordion>
+    </mat-drawer>
+    <mat-drawer-content>
+      <mat-toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>CRUD</span>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item><a routerLink="/memberlist"> Member List</a></button>
+            <button mat-menu-item><a routerLink="/create">Create</a></button>
+          </mat-menu>
+        <span class="example-spacer"></span>
+        
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</mat-card>

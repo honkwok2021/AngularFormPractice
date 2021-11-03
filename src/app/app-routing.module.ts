@@ -5,7 +5,7 @@ import { ViewDetailComponent } from './components/view-detail/view-detail.compon
 import { ViewListComponent } from './components/view-list/view-list.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'4200', pathMatch:'full'},
+  {path:'',redirectTo:'memberlist', pathMatch:'full'},
   {path: 'create', component: ReactiveFormCreateComponent},
   {path: 'memberlist', component: ViewListComponent},
   {path: 'memberlist/:id', component: ViewDetailComponent}

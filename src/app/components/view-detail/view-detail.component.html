@@ -1,1 +1,54 @@
-<p>view-detail works!</p>
+<div class="container">
+    <form [formGroup]="registrationForm" >
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" formControlName="firstName">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" formControlName="lastName">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>Phone</mat-label>
+                <input matInput type="text" formControlName="phone">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>Email</mat-label>
+                <input matInput type="text" formControlName="email">
+            </mat-form-field>
+        </div>
+        <div formGroupName="address">
+            
+                <div>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Street</mat-label>
+                        <input matInput type="text" formControlName="street">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>State</mat-label>
+                        <input matInput type="text" formControlName="state">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>PostCode</mat-label>
+                        <input matInput type="number" formControlName="postCode">
+                    </mat-form-field>
+                </div>
+                
+            
+        </div>
+        
+        
+        
+    </form>
+</div>
