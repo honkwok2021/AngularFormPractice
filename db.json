@@ -25,16 +25,16 @@
       }
     },
     {
-      "id": 3,
       "firstName": "Peter",
       "lastName": "Holland",
       "phone": "4565601275",
       "email": "peter@test.com",
       "address": {
         "street": "31 Peter st",
-        "state": "MEL",
+        "state": "MWL",
         "postCode": 3210
-      }
+      },
+      "id": 3
     },
     {
       "firstName": "testing",
@@ -50,9 +50,9 @@
     },
     {
       "firstName": "testing",
-      "lastName": "Test",
+      "lastName": "editagaintest",
       "phone": "0233456789",
-      "email": "",
+      "email": "erwerwer@email.com",
       "address": {
         "street": "30 iphone st",
         "state": "NSW",

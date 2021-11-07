@@ -15,19 +15,27 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider'
 import {MatListModule} from '@angular/material/list'
 import {MatExpansionModule} from '@angular/material/expansion'
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSortModule } from '@angular/material/sort';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormCreateComponent } from './components/reactive-form-create/reactive-form-create.component';
 import { ViewListComponent } from './components/view-list/view-list.component';
 import { ViewDetailComponent } from './components/view-detail/view-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DetailDialogComponent } from './components/dialogs/detail-dialog/detail-dialog.component';
+import { EditDialogComponent } from './components/dialogs/edit-dialog/edit-dialog.component';
+import { EditComponent } from './components/edit/edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormCreateComponent,
     ViewListComponent,
-    ViewDetailComponent
+    ViewDetailComponent,
+    DetailDialogComponent,
+    EditDialogComponent,
+    EditComponent
 
   ],
   imports: [
@@ -38,7 +46,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     MatCardModule, MatFormFieldModule,MatInputModule,MatListModule,
     MatTableModule,MatButtonModule,MatToolbarModule,MatPaginatorModule,
-    MatIconModule,MatSidenavModule,MatMenuModule,MatDividerModule,MatExpansionModule
+    MatIconModule,MatSidenavModule,MatMenuModule,MatDividerModule,MatExpansionModule,
+    MatSortModule,MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

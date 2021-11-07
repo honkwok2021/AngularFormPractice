@@ -1,0 +1,54 @@
+<h1 mat-dialog-title>Detail</h1>
+<div mat-dialog-content [formGroup]="form">
+  <p>testing Member</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Member FirstName</mat-label>
+    <input matInput readonly formControlName="firstName">
+  </mat-form-field>
+  
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" formControlName="lastName">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Phone</mat-label>
+            <input matInput type="text" formControlName="phone">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Email</mat-label>
+            <input matInput type="text" formControlName="email">
+        </mat-form-field>
+    </div>
+    <div formGroupName="address">
+            
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>Street</mat-label>
+                <input matInput type="text" formControlName="street">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>State</mat-label>
+                <input matInput type="text" formControlName="state">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="legacy">
+                <mat-label>PostCode</mat-label>
+                <input matInput type="number" formControlName="postCode">
+            </mat-form-field>
+        </div>
+        
+    
+    </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onEditClick()">Edit/Save</button>
+  <button mat-button [mat-dialog-close]="" cdkFocusInitial>Ok</button>
+</div>
