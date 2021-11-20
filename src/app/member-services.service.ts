@@ -9,7 +9,7 @@ import { Member } from './member';
 export class MemberServicesService {
 
   //private apiUrl ='http://localhost:3000/members/'
-  private apiUrl='https://jsonplaceholder.typicode.com/members'
+  private apiUrl='https://my-json-server.typicode.com/honkwok2021/AngularFormPractice/members'
 
   constructor(private http:HttpClient) { }
 
