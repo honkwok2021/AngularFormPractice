@@ -8,7 +8,7 @@ import { Member } from './member';
 })
 export class MemberServicesService {
 
-  private apiUrl ='http://localhost:5000/members/'
+  private apiUrl ='http://localhost:3000/members/'
 
   constructor(private http:HttpClient) { }
 

@@ -71,7 +71,9 @@ export class ViewListComponent implements AfterViewInit, OnInit {
     dialogRef.afterClosed().subscribe(result=>{
       console.log("this is closed");
       this.dataSource.data= result.data
+      this.showAllMember()
     } )
+    
   }
   openDetailDialog(mem:any){
     const dialogRef=this.dialog.open(DetailDialogComponent, {
