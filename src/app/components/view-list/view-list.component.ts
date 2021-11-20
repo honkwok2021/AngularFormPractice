@@ -31,7 +31,7 @@ export class ViewListComponent implements AfterViewInit, OnInit {
 
   }
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    //this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
   
