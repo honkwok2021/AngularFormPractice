@@ -8,7 +8,8 @@ import { Member } from './member';
 })
 export class MemberServicesService {
 
-  private apiUrl ='http://localhost:3000/members/'
+  //private apiUrl ='http://localhost:3000/members/'
+  private apiUrl='https://jsonplaceholder.typicode.com/members'
 
   constructor(private http:HttpClient) { }
 
