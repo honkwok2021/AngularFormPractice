@@ -16,10 +16,11 @@ import { EditDialogComponent } from '../dialogs/edit-dialog/edit-dialog.componen
 })
 export class ViewListComponent implements AfterViewInit, OnInit {
 
-  displayedColumns: string[] =['id','firstname', 'lastname', 'email', 'action']
+  displayedColumns: string[] =['id','firstname', 'lastname', 'email', 'action','id2','firstname2', 'lastname2', 'email2','id3','firstname3', 'lastname3', 'email3']
   
   //members: Member[] =[]
    dataSource = new MatTableDataSource<Member>()
+   
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -28,6 +29,7 @@ export class ViewListComponent implements AfterViewInit, OnInit {
   ngOnInit(): void {
 
     this.showAllMember()
+    
 
   }
   ngAfterViewInit() {

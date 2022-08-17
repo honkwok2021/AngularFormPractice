@@ -26,7 +26,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DetailDialogComponent } from './components/dialogs/detail-dialog/detail-dialog.component';
 import { EditDialogComponent } from './components/dialogs/edit-dialog/edit-dialog.component';
 import { EditComponent } from './components/edit/edit.component';
+import { TestingComponent } from './components/testing/testing.component';
 
+import { FormlyModule } from '@ngx-formly/core';
+import { FormlyMaterialModule } from '@ngx-formly/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,8 @@ import { EditComponent } from './components/edit/edit.component';
     ViewDetailComponent,
     DetailDialogComponent,
     EditDialogComponent,
-    EditComponent
+    EditComponent,
+    TestingComponent
 
   ],
   imports: [
@@ -47,7 +51,9 @@ import { EditComponent } from './components/edit/edit.component';
     MatCardModule, MatFormFieldModule,MatInputModule,MatListModule,
     MatTableModule,MatButtonModule,MatToolbarModule,MatPaginatorModule,
     MatIconModule,MatSidenavModule,MatMenuModule,MatDividerModule,MatExpansionModule,
-    MatSortModule,MatDialogModule
+    MatSortModule,MatDialogModule,
+    FormlyMaterialModule,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

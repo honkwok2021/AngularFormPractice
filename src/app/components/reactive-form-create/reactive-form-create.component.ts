@@ -14,6 +14,17 @@ export class ReactiveFormCreateComponent implements OnInit {
 
   constructor(private fb:FormBuilder, private memberService:MemberServicesService) { }
 
+  memberID:string =''
+  array:any[]=[
+    {id:"1234", name:"Amy"},
+    {id:"4321", name:"John"}
+  ]
+
+  findMember(id:any){
+    this.array.find(value=> {value.id===id;console.log(value.id)})
+    
+  }
+
   ngOnInit(): void {
     this.registrationForm = this.fb.group({
       firstName:[''],
@@ -26,6 +37,7 @@ export class ReactiveFormCreateComponent implements OnInit {
         postCode:['']
       })
     })
+    this.findMember('1234')
   }
 
   onSubmit(){
